@@ -2,7 +2,8 @@ Name = {
 
 	//Configs
 	settings: {
-
+		slider: document.getElementById(''),
+		loader: document.getElementById('')
 	},
 
 	//Ejecute functions
@@ -11,6 +12,7 @@ Name = {
 	},
 	//Functions
 	Loader: function(){
+		
 		console.log("Loader...");
 	}
 };
