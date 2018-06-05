@@ -4,10 +4,11 @@ Name = {
 
 	//Configs
 	config: {
-		//get class name
-		modal: document.getElementsByClassName('modal'),
-		//get id
-		loader: document.getElementById('open-modal')
+		message : 'Hello',
+		production : true,
+		Modal : document.getElementsByClassName('modal'),
+		openModal : document.getElementById('open-modal'),
+		closeModal : document.getElementById('close-modal')
 	},
 
 	//Ejecute functions
@@ -18,8 +19,12 @@ Name = {
 
 	//Functions
 	Modal: function(){
-		c.loader.addEventListener('click', function(){
-			console.log("Modal...");
+		c.openModal.addEventListener('click', function(){
+			console.log("Open modal...");
+		});
+
+		c.closeModal.addEventListener('click', function(){
+			console.log("Close modal...");
 		});
 	}
 };
