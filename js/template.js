@@ -1,19 +1,26 @@
+var c;
+
 Name = {
 
 	//Configs
-	settings: {
-		slider: document.getElementById(''),
-		loader: document.getElementById('')
+	config: {
+		//get class name
+		modal: document.getElementsByClassName('modal'),
+		//get id
+		loader: document.getElementById('open-modal')
 	},
 
 	//Ejecute functions
 	init: function(){
-		Name.Loader();
+		c = this.config;
+		Name.Modal();
 	},
+
 	//Functions
-	Loader: function(){
-		
-		console.log("Loader...");
+	Modal: function(){
+		c.loader.addEventListener('click', function(){
+			console.log("Modal...");
+		});
 	}
 };
 
