@@ -13,3 +13,8 @@ $input.placeholder = "My name";
 
 //Set in my container
 $Container.appendChild($input);
+
+/*
+const content = element.innerHTML;
+element.innerHTML = htmlString;
+*/
