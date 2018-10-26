@@ -4,7 +4,7 @@
 	var $input = document.createElement('input');
 	var $p = document.createElement('p');
 
-	var dom = {
+	dom = {
 		init: function(){
 			dom.addText();
 			dom.createInput();
