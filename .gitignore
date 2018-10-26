@@ -1,5 +1,5 @@
-/assets/*
-!/assets/css/*
+assets/*
+!assets/css/*
 *.jade
 readme.html
 prepros-6.config
