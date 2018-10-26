@@ -1,3 +1,4 @@
+/assets/*
 !/assets/css/*
 *.jade
 readme.html
