@@ -1,20 +1,34 @@
-//Vars
-var $Container = document.getElementById('container');
-var $input = document.createElement('input');
+(function($){
+	//= Vars
+	var $form = document.getElementById('form');
+	var $input = document.createElement('input');
+	var $p = document.createElement('p');
 
-//Input add Attr
-$input.name = "name";
-$input.id = "name";
-$input.type = "text";
-$input.required = true;
-$input.autofocus = true;
-$input.placeholder = "My name";
+	var dom = {
+		init: function(){
+			dom.addText();
+			dom.createInput();
+		},
+		addText: function(){
+			$p.innerHTML = 'Hello!';
 
+			//= Add text in tag </p>
+			$form.appendChild($p);
+		},
+		createInput : function(){
+			//= Builder attr's for </input>
+			$input.name = "name";
+			$input.id = "name";
+			$input.type = "text";
+			$input.classList.add("form-control");
+			$input.required = true;
+			$input.autofocus = true;
+			$input.placeholder = "First name";
 
-//Set in my container
-$Container.appendChild($input);
+			//= Add input in tag </form>
+			$form.appendChild($input);
+		}
+	};
 
-/*
-const content = element.innerHTML;
-element.innerHTML = htmlString;
-*/
+	dom.init();
+})();
