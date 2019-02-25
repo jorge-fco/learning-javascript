@@ -1,4 +1,7 @@
 var Video = document.getElementById("video");
 
-//create tag <source>
+//= Create tag <source>
 var $Source = document.createElement("source");
+
+//= Insert in DOM tag <source> in <video> 
+Video.appendChild($Source);
