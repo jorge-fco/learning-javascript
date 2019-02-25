@@ -1,1 +1,1 @@
-var Video = ;
+var Video = document.getElementById("video");
